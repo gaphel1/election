@@ -15,9 +15,12 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     // height: '50vh'
   },
-  column:{
+  row:{
     flexDirection:'row'
   },   
+  column:{
+    flexDirection:'column'
+  },  
   paper: {
     padding: theme.spacing(2),
     textAlign: 'center',
@@ -48,8 +51,8 @@ function FullWidthGrid(props) {
           <VerticalCard length={width}/>      
         </Grid>
         </Grid>
-        <Grid item className={classes.column}  xs={12} sm={6} >
-        <Grid container className={classes.column} spacing={1} xs={12}  >
+        <Grid item className={classes.row}  xs={12} sm={6} >
+        <Grid container className={classes.row} spacing={1} xs={12}  >
           <Grid item xs={12} sm={12}  >
            <HorizontalCard/>
           </Grid>
@@ -59,6 +62,22 @@ function FullWidthGrid(props) {
           <Grid item xs={12} sm={12}>
             <HorizontalCard/>
           </Grid>        
+        </Grid>
+        </Grid>
+        <Grid item className={classes.row}  xs={12} sm={12} >
+        <Grid container className={classes.row} spacing={1} xs={12}  >
+          <Grid item xs={12} sm={3}  >
+           <VerticalCard/>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <VerticalCard/>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <VerticalCard/>
+          </Grid> 
+          <Grid item xs={12} sm={3}>
+            <VerticalCard/>
+          </Grid>       
         </Grid>
         </Grid>
         <Grid item className={classes.divider} xs={12}>
