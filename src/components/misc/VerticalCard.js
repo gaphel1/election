@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   },
   cover: {
     // width: 300,
-    height:188
+    height:220
   },
   controls: {
     display: 'flex',
@@ -38,17 +38,20 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function MediaControlCard() {
+export default function MediaControlCard(props) {
   const classes = useStyles();
   const theme = useTheme();
-
+  console.log(props.length)
   return (
     <Card className={classes.root}>
         <CardMedia
-          className={classes.cover}
+          className= {classes.cover}
           image="https://images.unsplash.com/photo-1468774871041-fc64dd5522f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80"
           title="Live from space album cover"
         />
+        {/* props */}
+        {props.length}
+        
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5">
@@ -59,6 +62,15 @@ export default function MediaControlCard() {
             Mac Miller 
           </Typography>
           <Typography component="h3" variant="h9">
+            this is about the live of people who we do not know
+            this is about the live of people who we do not know
+            this is about the live of people who we do not know
+            this is about the live of people who we do not know
+            this is about the live of people who we do not know
+            this is about the live of people who we do not know
+            this is about the live of people who we do not know
+            this is about the live of people who we do not know
+            this is about the live of people who we do not know
             this is about the live of people who we do not know
           </Typography>
         </CardContent>

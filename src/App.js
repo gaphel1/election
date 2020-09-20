@@ -25,6 +25,7 @@ import Divider from "@material-ui/core/Divider";
 import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
 import Home from './components/Pages/Home';
 import ChartPage from './components/Pages/ChartPage';
+import {  } from "./components/Pages/AllNews";
 import Tooltip from "@material-ui/core/Tooltip";
 import {
   // ChevronLeftOutlined as PreviousIcon,
@@ -38,6 +39,7 @@ import {
   // Star as StarIcon,
   SupervisorAccountOutlined as SubordinatorIcon
 } from "@material-ui/icons";
+import News from "./components/layout/News";
 
 function Copyright() {
   return (
@@ -352,7 +354,7 @@ class MiniDrawer extends React.Component {
               <Switch>
                 <Route exact path="/" component={Home}/>
                 <Route path="/chart" component={ChartPage}/>
-                {/* <Route path="/register" component={Register}/> */}
+                <Route path="/news" component={News}/>
               </Switch>
           </BrowserRouter>
         {/* copyright */}

@@ -17,19 +17,20 @@ const useStyles = makeStyles((theme) => ({
   details: {
     display: 'flex',
     flexDirection: 'column',
-    flexGrow: 1,
+    // flexGrow: 1,
   },
   content: {
-    flex: '1 0 auto',
+    // flex: '1 0 ',
   },
   cover: {
-    width: 151,
+    width: '130%',
   },
   controls: {
     display: 'flex',
     alignItems: 'center',
-    paddingLeft: theme.spacing(1),
-    paddingBottom: theme.spacing(1),
+    paddingLeft: theme.spacing(2),
+    paddingBottom: theme.spacing(2),
+    // width: '100%',
   },
   playIcon: {
     height: 38,
@@ -46,22 +47,18 @@ export default function MediaControlCard() {
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5">
-            Live From Space
+            Live From 
           </Typography>
-          <Typography variant="subtitle1" color="textSecondary">
+          {/* <Typography variant="subtitle1" color="textSecondary">
             Mac Miller
-          </Typography>
+          </Typography> */}
         </CardContent>
         <div className={classes.controls}>
-          <IconButton aria-label="previous">
-            {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
-          </IconButton>
-          <IconButton aria-label="play/pause">
-            <PlayArrowIcon className={classes.playIcon} />
-          </IconButton>
-          <IconButton aria-label="next">
-            {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-          </IconButton>
+        <Typography component="h3" variant="h9">
+            this is about the live of people who we do not know
+            this is about the live of people who we do not know
+            {/* this is about the live of people who we do not know */}
+        </Typography>
         </div>
       </div>
       <CardMedia

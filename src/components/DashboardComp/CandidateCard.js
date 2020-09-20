@@ -31,7 +31,7 @@ function Deposits(props) {
       <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" className={classes.large} />
       <ChartTitle> {props.fname} </ChartTitle>
       <Typography component="p" variant="h4">
-        $3,024.00
+        123
       </Typography>
       {/* <Typography color="textSecondary" >
         on 15 March, 2019
