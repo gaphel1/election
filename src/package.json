@@ -1,0 +1,17 @@
+{
+  "title": "Material demo",
+  "devDependencies": {
+    "react-scripts": "latest"
+  },
+  "description": "An application layout using Material UI",
+  "dependencies": {
+    "react-dom": "latest",
+    "react": "latest",
+    "prop-types": "latest",
+    "classnames": "latest",
+    "@material-ui/icons": "latest",
+    "@material-ui/core": "latest"
+  },
+  "keywords": [],
+  "name": "material-layout-demo"
+}
